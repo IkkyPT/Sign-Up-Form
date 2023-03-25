@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/99f34af06c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="bg-image"></div>
+        <main>
+            <div class="container">
+                <div class="container-left">
+                    <div class="logo">
+                        <img src="./img/odin-logo.png" alt="odin">
+                        <h2>ODIN</h2>
+                    </div>
+                </div>
+                <div class="container-right">
+                    <div class="top-section">
+                        <span class="top-text"><p>This is not a real online service! You know you need something like this in your life to<br>help you realize your deepest dreams.<br>
+                            Sign up now to get started.</p></span>
+                        <span class="bot-text">
+                            <p>You know you want to.</p>
+                        </span>
+                    </div>
+                    <div class="mid-section">
+                        <p>Let's do this!</p>
+                        <form action="#">
+                        <fieldset>
+                            <div class="form-cell">
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text" name="first_name" id="first_name" maxlength="15" required>
+                            </div>
+                            <div class="form-cell">
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" id="last_name" name="last_name" maxlength="15" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-cell">
+                                <label for="user_email">EMAIL ADRESS:</label>
+                                <input type="email" id="user_email" name="email" required>
+                            </div>
+                            <div class="form-cell">
+                                <label for="phone">PHONE NUMBER:</label>
+                                <input type="text" id="phone" name="phone" pattern="[0-9]{9}" title="Ex: 914237899" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-cell">
+                                <label for="user_password">PASSWORD:</label>
+                                <input type="password" id="user_password" name="password" required>
+                                <span class="warn"></span>
+                            </div>
+                            <div class="form-cell">
+                                <label for="user_repassword">CONFIRM PASSWORD:</label>
+                                <input type="password" id="user_repassword" name="repassword" required>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="crt-acc" onclick="checkPassword()">Create Account</button>
+                    </form>
+                    </div>
+                    <div class="bot-section">
+                        <span>Already have an account? <a href="#">Log in</a></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
